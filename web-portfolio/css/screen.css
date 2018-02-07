@@ -1,0 +1,352 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+.group:after {
+  display: block;
+  visibility: hidden;
+  clear: both;
+  height: 0;
+  content: "";
+  line-height: 0; }
+
+/* Clearfix */
+* html .group {
+  zoom: 1; }
+
+/* IE6 */
+*:first-child + html .group {
+  zoom: 1; }
+
+/* IE7 */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+a, a:link, a:visited {
+  text-decoration: none;
+  color: inherit; }
+
+.caps, body.landing .menu h4 {
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
+
+body {
+  font-family: "Titillium Web", "Helvetica", "Arial", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #334166; }
+
+body.landing {
+  height: 100%;
+  vertical-align: middle;
+  text-align: center; }
+  body.landing > * {
+    text-align: left; }
+  body.landing:before {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+  body.landing .logo {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 50px; }
+  body.landing .menu {
+    display: inline-block;
+    width: 220px;
+    vertical-align: middle;
+    margin: 0 50px;
+    margin-top: -45px; }
+  body.landing .menu h4 {
+    font-size: 1rem;
+    font-style: italic; }
+  body.landing .menu .work {
+    font-weight: 100;
+    font-size: 2rem; }
+    body.landing .menu .work li {
+      position: relative;
+      margin-top: 25px;
+      width: auto;
+      display: inline-block; }
+      body.landing .menu .work li p {
+        position: absolute;
+        white-space: nowrap;
+        left: 100%;
+        bottom: -4px;
+        padding: 8px 0 8px 20px;
+        margin-left: 2px;
+        width: auto;
+        vertical-align: middle;
+        font-weight: 300;
+        font-size: 1rem;
+        color: transparent;
+        -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+        -webkit-transform-origin: 0 100%;
+        transform-origin: 0 100%;
+        -moz-transform: scale(0.9, 0.9);
+        -ms-transform: scale(0.9, 0.9);
+        -webkit-transform: scale(0.9, 0.9);
+        transform: scale(0.9, 0.9);
+        filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+        opacity: 0;
+        -moz-transition: opacity 0.2s ease, color 0.2s ease 0.2s, -moz-transform 0.2s ease 0.2s;
+        -o-transition: opacity 0.2s ease, color 0.2s ease 0.2s, -o-transform 0.2s ease 0.2s;
+        -webkit-transition: opacity 0.2s ease, color 0.2s ease, -webkit-transform 0.2s ease;
+        -webkit-transition-delay: 0s, 0.2s, 0.2s;
+        transition: opacity 0.2s ease, color 0.2s ease 0.2s, transform 0.2s ease 0.2s; }
+        body.landing .menu .work li p:before {
+          content: "";
+          height: 1px;
+          background-color: #334166;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          width: 0;
+          -moz-transition: width 0.3s ease-out 0.3s;
+          -o-transition: width 0.3s ease-out 0.3s;
+          -webkit-transition: width 0.3s ease-out;
+          -webkit-transition-delay: 0.3s;
+          transition: width 0.3s ease-out 0.3s; }
+    body.landing .menu .work + h4 {
+      margin-top: 60px; }
+    body.landing .menu .work a {
+      position: relative;
+      padding-right: 20px; }
+      body.landing .menu .work a.anchor-1:before {
+        -moz-animation: pulse-box-shadow 5s infinite 1s;
+        -webkit-animation: pulse-box-shadow 5s infinite 1s;
+        animation: pulse-box-shadow 5s infinite 1s; }
+      body.landing .menu .work a.anchor-2:before {
+        -moz-animation: pulse-box-shadow 5s infinite 2s;
+        -webkit-animation: pulse-box-shadow 5s infinite 2s;
+        animation: pulse-box-shadow 5s infinite 2s; }
+      body.landing .menu .work a.anchor-3:before {
+        -moz-animation: pulse-box-shadow 5s infinite 3s;
+        -webkit-animation: pulse-box-shadow 5s infinite 3s;
+        animation: pulse-box-shadow 5s infinite 3s; }
+      body.landing .menu .work a:before {
+        box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3);
+        content: "";
+        display: inline-block;
+        position: absolute;
+        left: -19px;
+        top: 50%;
+        width: 8px;
+        height: 8px;
+        margin-right: 10px;
+        margin-top: -4px;
+        border-radius: 4px;
+        background-color: transparent;
+        -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        -moz-transition: -moz-transform 0.4s ease, border-radius 0.2s ease, background-color 0.6s ease;
+        -o-transition: -o-transform 0.4s ease, border-radius 0.2s ease, background-color 0.6s ease;
+        -webkit-transition: -webkit-transform 0.4s ease, border-radius 0.2s ease, background-color 0.6s ease;
+        transition: transform 0.4s ease, border-radius 0.2s ease, background-color 0.6s ease; }
+      body.landing .menu .work a:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 2px;
+        width: 0;
+        bottom: 4px;
+        height: 1px;
+        background-color: #334166;
+        -moz-transition: width 0.2s ease-in 0.1s;
+        -o-transition: width 0.2s ease-in 0.1s;
+        -webkit-transition: width 0.2s ease-in;
+        -webkit-transition-delay: 0.1s;
+        transition: width 0.2s ease-in 0.1s; }
+      body.landing .menu .work a:hover {
+        cursor: pointer; }
+    body.landing .menu .work li:hover p {
+      color: #334166;
+      filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+      opacity: 1;
+      -moz-transform: scale(1, 1);
+      -ms-transform: scale(1, 1);
+      -webkit-transform: scale(1, 1);
+      transform: scale(1, 1); }
+      body.landing .menu .work li:hover p:before {
+        width: 100%; }
+    body.landing .menu .work li:hover a:after {
+      width: 100%; }
+    body.landing .menu .work li:hover a:before {
+      border-radius: 0;
+      background-color: #334166;
+      -moz-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      -webkit-transform: rotate(-45deg);
+      transform: rotate(-45deg); }
+  body.landing .menu:hover a.anchor-1:before,
+  body.landing .menu:hover a.anchor-2:before,
+  body.landing .menu:hover a.anchor-3:before {
+    -moz-animation: none;
+    -webkit-animation: none;
+    animation: none; }
+  body.landing .menu .contact {
+    margin-top: 30px; }
+    body.landing .menu .contact a:hover {
+      text-decoration: underline;
+      cursor: pointer; }
+
+@-moz-keyframes pulse-box-shadow {
+  0% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); }
+  25% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); }
+  50% {
+    box-shadow: inset 0 0 0 1px #334166; }
+  75% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); }
+  100% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); } }
+@-webkit-keyframes pulse-box-shadow {
+  0% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); }
+  25% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); }
+  50% {
+    box-shadow: inset 0 0 0 1px #334166; }
+  75% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); }
+  100% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); } }
+@keyframes pulse-box-shadow {
+  0% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); }
+  25% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); }
+  50% {
+    box-shadow: inset 0 0 0 1px #334166; }
+  75% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); }
+  100% {
+    box-shadow: inset 0 0 0 1px rgba(51, 65, 102, 0.3); } }
+@media screen and (max-width: 1300px) {
+  body.landing .logo,
+  bodt.landing .menu {
+    margin-left: -200px; } }
+@media screen and (max-width: 1100px) {
+  body.landing .logo,
+  body.landing .menu {
+    margin: 0 auto;
+    display: block; }
+
+  body.landing .logo {
+    width: 240px;
+    margin: 40px auto; }
+
+  body.landing:before {
+    display: none; } }
+body.work .main-header {
+  height: 100px;
+  padding: 10px; }
+  body.work .main-header .logo, body.work .main-header .logo svg {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto; }
+    body.work .main-header .logo ellipse, body.work .main-header .logo svg ellipse {
+      fill: #ddd;
+      -moz-transition: fill 0.8s ease;
+      -o-transition: fill 0.8s ease;
+      -webkit-transition: fill 0.8s ease;
+      transition: fill 0.8s ease; }
+  body.work .main-header a svg {
+    -moz-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+    -moz-transition: -moz-transform 0.2s ease;
+    -o-transition: -o-transform 0.2s ease;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease; }
+  body.work .main-header a:hover .logo svg {
+    -moz-transform: scale(1.1, 1.1);
+    -ms-transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1); }
+    body.work .main-header a:hover .logo svg #Oval-1 {
+      fill: rgba(80, 227, 194, 0.8); }
+    body.work .main-header a:hover .logo svg #Oval-2 {
+      fill: rgba(208, 1, 27, 0.8); }
+    body.work .main-header a:hover .logo svg #Oval-3 {
+      fill: rgba(73, 144, 226, 0.8); }
+body.work section {
+  padding: 20px; }
+  body.work section header {
+    text-align: center; }
+  body.work section img, body.work section aside {
+    display: block;
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto; }
+  body.work section header, body.work section aside {
+    margin-bottom: 40px; }
+body.work h2 {
+  font-size: 6rem;
+  font-weight: 100;
+  margin-left: -7px; }
+body.work h3 {
+  font-size: 1.5rem; }
+body.work h4 {
+  font-size: 1.25rem;
+  font-weight: 600; }
+body.work p {
+  margin-top: 20px;
+  line-height: 1.5; }
+
+@media screen and (max-width: 800px) {
+  body.work h2 {
+    font-size: 4rem;
+    margin-bottom: 10px; } }
